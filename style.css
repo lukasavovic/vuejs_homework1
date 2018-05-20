@@ -1,0 +1,96 @@
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #515151;
+    font-family: 'Raleway', sans-serif;
+}
+.topbar {
+    width: 100%;
+    height: 100px;
+    border-bottom: 3px solid #ffc268;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.topbar p {
+    padding: 0 10%;
+    display: flex;
+    align-items: center; 
+    font-weight: bolder;
+}
+.hero {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hero h1 {
+    padding: 0;
+    margin: 0;
+    color: #f99f18;
+    font-size: 4em;
+}
+.hero p {
+    font-size: 18px;
+    color:  #282828;   
+}
+.categories {
+    width: 100%;
+    border-bottom: 3px solid #ffc268;
+}
+.categories ul {
+    margin: 0 auto;
+    padding: 0;
+    height: 100px;
+    display: flex;
+    max-width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.categories ul li {
+    list-style-type: none;
+    text-align: center;
+    width: 100%;
+    max-height: 50px;
+    font-weight: 700;
+}
+.categories ul .inner {
+    border-left: 1px solid #ffc268;
+    border-right: 1px solid #ffc268;
+}
+.categories ul .innerR {
+    border-right: 1px solid #ffc268;
+}
+.categories ul li a {
+    color: #282828;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    padding: 25px; 
+}
+.categories ul li a:hover {
+    color: #f99f18;
+    
+}
+.cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+
+.card {
+    width: 100%;
+    height: 40vh;
+    text-align: center;
+    font-weight: bolder;
+}
+.card img {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
