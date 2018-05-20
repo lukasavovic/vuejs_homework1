@@ -11,11 +11,7 @@
     
 </head>
 <body>
-    <div id="app2">
-        
-    </div>
-    <div id="app">
-        
+    <div id="app" >
         <div class="topbar">
             <p> <img src="android.png" alt=""> MobTech</p> 
             <p>Best online mobile shop</p>
@@ -35,10 +31,10 @@
             </ul>
         </div>
         <!-- vuejs -->
-        <div class="cards">
+        <div class="cards" v-on:load="ajax">
             <!-- vuejs template -->
             <cardItem
-                v-for="item in info"
+                v-for="item in info.phones"
                 v-bind:card="item"
                 v-bind:key="item.phoneName">
             </cardItem>
@@ -50,7 +46,6 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
