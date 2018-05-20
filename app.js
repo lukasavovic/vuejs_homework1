@@ -12,12 +12,7 @@ var app = new Vue({
   },
   mounted () {
     axios
-      .get('https://api.myjson.com/bins/1cpywi')
+      .get('http://api.myjson.com/bins/1cpywi')
       .then(response => (this.info = response.data.phones))
-  },
-  filters: {
-    currencydecimal (value) {
-      return value.toFixed(2)
-    }
   }
 });
